@@ -1,29 +1,261 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Dev Meghwani Profile</title>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <style>
-        h1 {
-            margin-bottom: 0.5em;
-        }
-        h2 {
-            text-decoration: underline;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(76, 76, 151);
+      }
+
+      .left {
+        color: white;
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0px 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        text-decoration: none;
+        color: rgb(157, 157, 217);
+        font-size: 1.01rem;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        margin: 130px 0px;
+        align-items: center;
+      }
+
+      .firstSection > div {
+        width: 30%;
+      }
+
+      .leftSection {
+        font-size: 2rem;
+      }
+
+      .rightSection img {
+        width: 80%;
+      }
+
+      .purple {
+        color: rgb(21, 21, 131);
+      }
+
+      .secondSection, .thirdSection {
+        max-width: 80vw;
+        margin: auto;
+      }
+
+      main hr {
+        border: 0px;
+        background-color: #9c91f1;
+        height: 1.2px;
+        margin: 40px 84px;
+      }
+
+      .secondSection h2{
+        font-size: 1.6rem;
+      }
+      .thirdSection h2 {
+        font-size: 1.6rem;
+      }
+
+      .container {
+        display: flex;
+        margin: 64px auto;
+        justify-content: center;
+        align-items: center;
+      }
+      .card {
+        position: relative;
+        border: 2px solid black;
+        border-radius: 7px;
+        width: 198px;
+        height: 344px;
+        margin: 10px;
+      }
+      .image {
+        padding: 5px;
+      }
+      .image img {
+        border-radius: 7px;
+      }
+      .content {
+        text-align: center;
+        padding: 2px 13px;
+      }
+
+      .content p {
+        color: gray;
+        font-size: 0.8rem;
+        padding: 4px auto;
+      }
+
+      .button {
+        position: absolute;
+        bottom:10px;
+        left:54px;
+      }
+
+      .button button {
+        padding: 7px 13px;
+        background-color: rgb(216, 236, 253);
+        color: rgb(14, 150, 234);
+        font-size: 10px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+      }
+      .button button:hover {
+        background-color: rgb(194, 225, 246);
+        color: rgb(10, 136, 214);
+      }
+      a{
+        text-decoration: none;
+      }
+      .image1 img{
+        border: 1px solid black;
+      }
+      .content1{
+        padding: 27px 13px;
+      }
+      .card1{
+        height:155px;
+        width:500px;
+        border:2px solid black;
+        border-radius: 7px;
+        margin: 71px 10px;
+      }
+      .content2 h2{
+        margin: 10px 30px;
+
+      }
+      
+      .ed{
+        background-color: #fff;
+        margin: 10px 15px;
+      }
     </style>
-</head>
-<body>
-    <h1>Dev Meghwani</h1>
-    <p>📞 9029529203</p>
-    <p>✉ devmm6677445@gmail.com</p>
-    <p>🌐github.com/devm567</p>
-    <p>🌍 India</p>
-    <p>💼 linkedin.com/in/devmeghwani</p>
-    <hr>
-    <h2>EDUCATION</h2>
-    <h3>Bachelor's Degree in Data Science & Artificial Intelligence</h3>
-    <p><strong>Indian Institute of Technology, Guwahati</strong></p>
-    <p>📅 2023 - Present | Guwahati, India</p>
-</body>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Dev's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+            <li><a href="/">About Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My Name is <span class="purple">Dev</span>
+          <div>
+            and I'm a passionate
+            <div class="purple">Web Developer.</div>
+          </div>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <h2>Projects</h2>
+        <div class="container">
+          <div class="card">
+            <div class="image">
+              <img width="188px" src="p1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h3>My Portfolio</h3>
+              <p>
+                I build this first portfolio website as a project using HTML and
+                CSS only. I'll be adding more features with time.
+              </p>
+            </div>
+            <div class="button">
+              <button>
+                <a href="devresume.vercel.app" target="_blank"> 
+                Visit Website
+              </a></button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="image image1">
+              <img width="186px" src="amazon.png" alt="" />
+            </div>
+            <div class="content content1">
+              <h3>Amazon Clone</h3>
+              <p>
+                It was super fun for me to clone a website specially if it is Amazon.
+                Faced many small difficulties but learnt a lot while building this clone.
+              </p>
+            </div>
+            <div class="button">
+              <button>
+                <a href="devresume.vercel.app" target="_blank"> 
+                Visit Website
+              </a></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr />
+      <section class="thirdSection">
+        <h2>Education</h2>
+        <div class="card1">
+          <div class="content2">
+            <h2>Under Graduation</h2>
+            <h4 class="ed">Indian Institute of Technology, Guwahati</h4>
+              <p class="ed">Pursuing B.Sc (Honours) in Data Science & Artificial
+              Intelligence through Coursera</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
-
-
